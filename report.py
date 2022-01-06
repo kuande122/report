@@ -2,7 +2,6 @@ __author__="teacher"
 import random
 import streamlit as st
 confirm_input = st.button('確認產生答案')
-
 if confirm_input:
  st.session_state.c = c = random.randint(2,99)
  st.session_state.start = 1
@@ -25,4 +24,5 @@ if confirm_input2:
    st.write("輸入不合法,請重新輸入:")
   else:
    st.session_state.start=x
+
 
