@@ -1,7 +1,7 @@
 __author__="teacher"
 import random
 import streamlit as st
-confirm_input = st.sildbar.button('確認產生答案')
+confirm_input = st.sidebar.button('確認產生答案')
 
 if confirm_input:
  st.session_state.c = c = random.randint(2,99)
