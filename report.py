@@ -42,6 +42,18 @@ if option == '中信兄弟':
   if option1=='球隊成績':
     st.header('球隊成績')
     st.write(Brothers) 
+    st.header('2021全年度戰績')
+    labels = 'Home Win', 'Away Win','Home Lose', 'Away Lose','Home Tie', 'Away Tie'
+    sizes = [22, 34, 26, 23,2,3]
+    explode = (0,0,0.2 ,0, 0, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
+    
+    fig1, ax1 = plt.subplots()
+    ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
+    shadow=True, startangle=90,textprops = {"fontsize" : 7})
+    plt.legend(loc = "best")   
+    ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+
+st.pyplot(fig1)
 
   elif option1=='投手成績':
     st.header('投手成績')
@@ -186,7 +198,20 @@ elif option == '統一7-Eleven獅':
   st.image(image)
   if option1=='球隊成績':
     st.header('球隊成績')
-    st.write(Unilions)    
+    st.write(Unilions) 
+    st.header('2021全年度戰績')
+    labels = 'Home Win', 'Away Win','Home Lose', 'Away Lose','Home Tie', 'Away Tie'
+    sizes = [36, 28, 21, 30,3,2]
+    explode = (0,0,0.2 ,0, 0, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
+
+    fig1, ax1 = plt.subplots()
+    ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
+    shadow=True, startangle=90,textprops = {"fontsize" : 7})
+
+    plt.legend(loc = "best")   
+    ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+
+st.pyplot(fig1)
   elif option1=='投手成績':
     st.header('投手成績')
     st.write(UnilionsPitching)
@@ -330,6 +355,19 @@ elif option == '味全龍':
   if option1=='球隊成績':
     st.header('球隊成績')
     st.write(Dragons) 
+    st.header('2021全年度戰績')
+    labels = 'Home Win', 'Away Win','Home Lose', 'Away Lose','Home Tie', 'Away Tie'
+    sizes = [29, 22, 29, 38,2,1]
+    explode = (0,0,0.2 ,0, 0, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
+
+    fig1, ax1 = plt.subplots()
+    ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
+    shadow=True, startangle=90,textprops = {"fontsize" : 7})
+
+    plt.legend(loc = "best")   
+    ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+
+st.pyplot(fig1)
   elif option1=='投手成績':
     st.header('投手成績')  
     st.write(DragonsPitching)
@@ -465,6 +503,19 @@ elif option == '樂天桃猿':
   if option1=='球隊成績':
     st.header('球隊成績')
     st.write(Rakuten) 
+    st.header('2021全年度戰績')
+    labels = 'Home Win', 'Away Win','Home Lose', 'Away Lose','Home Tie', 'Away Tie'
+    sizes = [27, 29, 31, 30,2,1]
+    explode = (0,0,0.2 ,0, 0, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
+
+    fig1, ax1 = plt.subplots()
+    ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
+    shadow=True, startangle=90,textprops = {"fontsize" : 7})
+    
+    plt.legend(loc = "best")   
+    ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+
+st.pyplot(fig1)
   elif option1=='投手成績':
     st.header('投手成績')
     st.write(RakutenPitching)
@@ -602,6 +653,19 @@ elif option == '富邦悍將':
   if option1=='球隊成績':
     st.header('球隊成績')
     st.write(Guardians) 
+    st.header('2021全年度戰績')
+    labels = 'Home Win', 'Away Win','Home Lose', 'Away Lose','Home Tie', 'Away Tie'
+    sizes = [27, 27, 32, 30,1,3]
+    explode = (0,0,0.2 ,0, 0, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
+
+    fig1, ax1 = plt.subplots()
+    ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
+    shadow=True, startangle=90,textprops = {"fontsize" : 7})
+
+    plt.legend(loc = "best")   
+    ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+
+st.pyplot(fig1)
   elif option1=='投手成績':
     st.header('投手成績')
     st.write(GuardiansPitching)
