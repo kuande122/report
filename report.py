@@ -198,6 +198,15 @@ elif option == '統一7-Eleven獅':
     st.pyplot(plt) 
     x=st.button('點取看更多分析')
     if x:
+        df = pd.DataFrame(
+        [["2021", 846, 343], ["2020", 793, 395],["2019",775,368],["2018",858,369],["2017",867,431],["2016",831,439],
+        ["2015",699,480],["2014",622,330]],
+         columns=["Year", "StrikeOut", "BB"],
+        )
+
+        fig = px.bar(df, x="Year", y=["StrikeOut","BB"], barmode='group', height=400)
+        
+        st.plotly_chart(fig)
         
         
         
