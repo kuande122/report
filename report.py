@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd               # 資料處理套件
 import matplotlib.pyplot as plt   # 資料視覺化套件
 import xlrd
+import plotly.express as px
 from PIL import Image
 st.set_page_config(
     page_title="猛祺的期末報告",
