@@ -196,8 +196,8 @@ if option == '中信兄弟':
 elif option == '統一7-Eleven獅':
   image = Image.open('unilion.png')
   st.image(image)
-  st.write("嗆司曲 誰與爭鋒")
-  audio_file = open("誰與爭鋒.mp3")
+  st.write("##嗆司曲 誰與爭鋒")
+  audio_file = open("誰與爭鋒.mp3", "rb")
   st.audio(audio_file.read())  
     
     
