@@ -126,6 +126,15 @@ if option == '中信兄弟':
                     wspace=0.2, 
                     hspace=0.3)
         st.pyplot(plt)
+        df = pd.DataFrame(
+        [["2021", 1080, 77], ["2020", 1319, 143],["2019",1168,148],["2018",1152,91],["2017",1214,145],["2016",1460,169],
+        ["2015",1308,90],["2014",1083,52]],
+         columns=["Year", "Hit", "Homerun"],
+        )
+
+        fig = px.bar(df, x="Year", y=["Hit", "Homerun"], barmode='group', height=400)
+        
+        st.plotly_chart(fig)
     
   else:
     st.header('守備成績')
