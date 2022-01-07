@@ -211,7 +211,7 @@ elif option == '統一7-Eleven獅':
     plt.legend(loc = "best")   
     ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
-st.pyplot(fig1)
+    st.pyplot(fig1)
   elif option1=='投手成績':
     st.header('投手成績')
     st.write(UnilionsPitching)
