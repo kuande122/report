@@ -457,7 +457,7 @@ elif option == '樂天桃猿':
     x=st.button('點取看更多分析')
     if x:
         df = pd.DataFrame(
-        [["2021", 798, 399], ["2020", 893, 378],
+        [["2021", 798, 399], ["2020", 893, 378]],
          columns=["Year", "StrikeOut", "BB"],
         )
 
