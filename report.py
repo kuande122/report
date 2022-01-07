@@ -65,6 +65,15 @@ if option == '中信兄弟':
     st.pyplot(plt) 
     x=st.button('點取看更多分析')
     if x:
+        df = pd.DataFrame(
+        [["2021", 839, 317], ["2020", 1035, 366],["2019",797,376],["2018",820,394],["2017",841,424],["2016",867,398],
+        ["2015",710,345],["2014",674,320]],
+        columns=["Year", "StrikeOut", "BB"],
+        )
+
+        fig = px.bar(df, x="Year", y=["StrikeOut","BB"], barmode='group', height=400)
+        
+        st.plotly_chart(fig)
     
       
     
