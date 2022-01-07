@@ -102,7 +102,7 @@ if option == '中信兄弟':
         plt.xticks(GuardiansBatting.年度) 
         plt.xticks(DragonsBatting.年度) 
         plt.title('CTBC Brothers Batting OBP VS Other Teams ') # 設定圖表標題
-        plt.legend(labels=["BrothersBatting", "UnilionsBatting","DragonsBatting","GuardiansBatting","RakutenBatting"], loc = 'best',fontsize= 5)
+        plt.legend(labels=["BrothersBatting", "UnilionsBatting","DragonsBatting","GuardiansBatting","RakutenBatting"], loc = 'best',fontsize= 6)
         plt.subplot(2, 1 ,2)
         plt.style.use("ggplot")
         plt.plot(BrothersBatting.年度, BrothersBatting.長打率,'.-', color='yellow')
@@ -118,7 +118,7 @@ if option == '中信兄弟':
         plt.xticks(GuardiansBatting.年度) 
         plt.xticks(DragonsBatting.年度) 
         plt.title('CTBC Brothers Batting SLG VS Other Teams ') # 設定圖表標題
-        plt.legend(labels=["BrothersBatting", "UnilionsBatting","DragonsBatting","GuardiansBatting","RakutenBatting"], loc = 'best',fontsize= 5)
+        plt.legend(labels=["BrothersBatting", "UnilionsBatting","DragonsBatting","GuardiansBatting","RakutenBatting"], loc = 'best',fontsize= 6)
         plt.subplots_adjust(left=0.125,
                     bottom=0.5, 
                     right=0.9, 
