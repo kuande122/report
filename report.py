@@ -448,6 +448,14 @@ elif option == '樂天桃猿':
     st.pyplot(plt)  
     x=st.button('點取看更多分析')
     if x:
+        df = pd.DataFrame(
+        [["2021", 798, 399], ["2020", 893, 378],
+         columns=["Year", "StrikeOut", "BB"],
+        )
+
+        fig = px.bar(df, x="Year", y=["StrikeOut","BB"], barmode='group', height=400)
+        
+        st.plotly_chart(fig)
     
   elif option1=='打擊成績':
     st.header('打擊成績')
