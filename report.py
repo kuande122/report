@@ -124,8 +124,8 @@ if option == '中信兄弟':
                     bottom=0.1, 
                     right=0.9, 
                     top=0.9, 
-                    wspace=15.0, 
-                    hspace=15.0)
+                    wspace=0.2, 
+                    hspace=0.9)
         st.pyplot(plt)
     
   else:
