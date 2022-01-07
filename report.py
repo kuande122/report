@@ -120,9 +120,9 @@ if option == '中信兄弟':
         plt.title('CTBC Brothers Batting SLG VS Other Teams ') # 設定圖表標題
         plt.legend(labels=["BrothersBatting", "UnilionsBatting","DragonsBatting","GuardiansBatting","RakutenBatting"], loc = 'best',fontsize= 6)
         plt.subplots_adjust(left=0.125,
-                    bottom=1.0, 
+                    bottom=3.0, 
                     right=0.9, 
-                    top=2.0, 
+                    top=5.0, 
                     wspace=0.2, 
                     hspace=0.5)
         st.pyplot(plt)
