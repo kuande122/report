@@ -173,7 +173,7 @@ if option == '中信兄弟':
         df = pd.DataFrame(
         [["2021", 4591, 73], ["2020", 4522, 96],["2019",4497,89],["2018",4477,132],["2017",4662,118],["2016",4633,134],
         ["2015",4605,129],["2014",4535,97]],
-        columns=["Year", "BaseballDefenseOpportunity", "E"],
+        columns=["Year", "Baseball Defense Opportunity", "E"],
         )
 
         fig = px.bar(df, x="Year", y=["Baseball Defense Opportunity","E"], barmode='group', height=400)
@@ -318,7 +318,7 @@ elif option == '統一7-Eleven獅':
         df = pd.DataFrame(
         [["2021", 4454, 104], ["2020", 4523, 101],["2019",4544,134],["2018",4533,131],["2017",4525,121],["2016",4518,140],
         ["2015",4552,123],["2014",4705,111]],
-        columns=["Year", "BaseballDefenseOpportunity", "E"],
+        columns=["Year", "Baseball Defense Opportunity", "E"],
         )
 
         fig = px.bar(df, x="Year", y=["Baseball Defense Opportunity","E"], barmode='group', height=400)
@@ -589,7 +589,7 @@ elif option == '樂天桃猿':
     if x:
         df = pd.DataFrame(
         [["2021", 4583, 109], ["2020", 4563, 130]],
-        columns=["Year", "BaseballDefenseOpportunity", "E"],
+        columns=["Year", "Baseball Defense Opportunity", "E"],
         )
 
         fig = px.bar(df, x="Year", y=["Baseball Defense Opportunity","E"], barmode='group', height=400)
@@ -725,7 +725,7 @@ elif option == '富邦悍將':
     if x:
         df = pd.DataFrame(
         [["2021", 4522, 100], ["2020", 4518, 119],["2019",4411,93],["2018",4497,121],["2017",4381,114]],
-        columns=["Year", "BaseballDefenseOpportunity", "E"],
+        columns=["Year", "Baseball Defense Opportunity", "E"],
         )
 
         fig = px.bar(df, x="Year", y=["Baseball Defense Opportunity","E"], barmode='group', height=400)
