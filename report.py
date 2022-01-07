@@ -295,6 +295,7 @@ elif option == '味全龍':
     plt.title('Dragons Pitching ERA VS Other Teams ') # 設定圖表標題
     plt.legend(labels=["BrothersPitching", "UnilionsPitching","DragonsPitching","GuardiansPitching","RakutenPitching"], loc = 'best')
     st.pyplot(plt)   
+    
   elif option1=='打擊成績':
     st.header('打擊成績')
     st.write(DragonsBatting)
@@ -356,6 +357,13 @@ elif option == '味全龍':
                     wspace=0.2, 
                     hspace=0.3)
         st.pyplot(plt)
+        df = pd.DataFrame(
+        [["2021", 977, 52],
+        columns=["Year", "Hit", "Homerun"]
+        )   
+        fig = px.bar(df, x="Year", y=["Hit", "Homerun"], barmode='group', height=400)
+        
+        st.plotly_chart(fig)
   else:
     st.header('守備成績')
     st.write(DragonsDefense) 
