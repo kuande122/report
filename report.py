@@ -195,6 +195,8 @@ if option == '中信兄弟':
     
 elif option == '統一7-Eleven獅':
   st.header('統一7-Eleven獅')
+  st.write('統一獅(1990-2007) – 統一7-ELEVEn獅(2008 - 至今 )')
+
   image = Image.open('unilion.png')
   st.image(image)
   st.write("嗆司曲 誰與爭鋒")
