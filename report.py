@@ -45,7 +45,7 @@ if option == '中信兄弟':
     st.header('2021全年度戰績')
     labels = 'Home Win', 'Away Win','Home Lose', 'Away Lose','Home Tie', 'Away Tie'
     sizes = [22, 34, 26, 23,2,3]
-    explode = (0,0,0.2 ,0, 0, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
+    explode = (0,0.2,0 ,0, 0, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
     
     fig1, ax1 = plt.subplots()
     ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
@@ -202,7 +202,7 @@ elif option == '統一7-Eleven獅':
     st.header('2021全年度戰績')
     labels = 'Home Win', 'Away Win','Home Lose', 'Away Lose','Home Tie', 'Away Tie'
     sizes = [36, 28, 21, 30,3,2]
-    explode = (0,0,0.2 ,0, 0, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
+    explode = (0.2,0,0 ,0, 0, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
 
     fig1, ax1 = plt.subplots()
     ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
@@ -358,7 +358,7 @@ elif option == '味全龍':
     st.header('2021全年度戰績')
     labels = 'Home Win', 'Away Win','Home Lose', 'Away Lose','Home Tie', 'Away Tie'
     sizes = [29, 22, 29, 38,2,1]
-    explode = (0,0,0.2 ,0, 0, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
+    explode = (0,0,0 ,0.2, 0, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
 
     fig1, ax1 = plt.subplots()
     ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
