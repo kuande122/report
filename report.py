@@ -168,6 +168,8 @@ if option == '中信兄弟':
     plt.title('CTBC Brothers Defense FPCT  VS Other Teams ') # 設定圖表標題
     plt.legend(labels=["BrothersDefense", "UnilionsDefense","DragonsDefense","GuardiansDefense","RakutenDefense"], loc = 'best')
     st.pyplot(plt) 
+    x=st.button('點取看更多分析')
+    if x:
     
     
 elif option == '統一7-Eleven獅':
@@ -302,6 +304,8 @@ elif option == '統一7-Eleven獅':
     plt.title('Unilions Defense FPCT  VS Other Teams ') # 設定圖表標題
     plt.legend(labels=["BrothersDefense", "UnilionsDefense","DragonsDefense","GuardiansDefense","RakutenDefense"], loc = 'best')
     st.pyplot(plt) 
+    x=st.button('點取看更多分析')
+    if x:
     
 elif option == '味全龍':
   image = Image.open('Dragons.png')
@@ -564,6 +568,8 @@ elif option == '樂天桃猿':
     plt.title('Rakuten Defense FPCT  VS Other Teams ') # 設定圖表標題
     plt.legend(labels=["BrothersDefense", "UnilionsDefense","DragonsDefense","GuardiansDefense","RakutenDefense"], loc = 'best')
     st.pyplot(plt) 
+    x=st.button('點取看更多分析')
+    if x:
   
 elif option == '富邦悍將':
   image = Image.open('guardians.png')
@@ -690,3 +696,5 @@ elif option == '富邦悍將':
     plt.title('Guardians Defense FPCT  VS Other Teams ') # 設定圖表標題
     plt.legend(labels=["BrothersDefense", "UnilionsDefense","DragonsDefense","GuardiansDefense","RakutenDefense"], loc = 'best')
     st.pyplot(plt) 
+    x=st.button('點取看更多分析')
+    if x:
