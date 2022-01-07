@@ -123,7 +123,7 @@ if option == '中信兄弟':
         plt.subplots_adjust(left=0.125,
                     bottom=0.2, 
                     right=0.9, 
-                    top=0.9, 
+                    top=1.0, 
                     wspace=0.2, 
                     hspace=0.9)
         st.pyplot(plt)
