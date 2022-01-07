@@ -696,7 +696,7 @@ elif option == '富邦悍將':
         fig = px.bar(df, x="Year", y=["StrikeOut","BB"], barmode='group', height=400)
         
         st.plotly_chart(fig)
-    elif option1=='打擊成績':
+  elif option1=='打擊成績':
     st.header('打擊成績')
     st.write(GuardiansBatting) 
     st.header('數據分析')
