@@ -361,7 +361,8 @@ elif option == '味全龍':
         [["2021", 977, 52],
         columns=["Year", "Hit", "Homerun"]
         )   
-        fig = px.bar(df, x="Year", y=["Hit", "Homerun"], barmode='group', height=400)
+        
+         fig = px.bar(df, x="Year", y=["Hit", "Homerun"], barmode='group', height=400)
         
         st.plotly_chart(fig)
   else:
