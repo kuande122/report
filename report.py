@@ -12,20 +12,36 @@ st.sidebar.header('選擇球隊及數據')
 option = st.sidebar.selectbox( '選擇球隊？', ['中信兄弟', '統一7-Eleven獅', '味全龍', '樂天桃猿','富邦悍將'])
 option1 = st.sidebar.selectbox( '選擇所想查看的數據？', ['球隊成績', '投手成績', '打擊成績', '守備成績'])
 
+#讀取數據庫
+BrothersPitching=pd.read_excel('BrothersPitching.xlsx')
+UnilionsPitching=pd.read_excel('UnilionsPitching.xlsx')
+DragonsPitching=pd.read_excel('DragonsPitching.xlsx')
+RakutenPitching=pd.read_excel('RakutenPitching.xlsx')
+GuardiansPitching=pd.read_excel('GuardiansPitching.xlsx')
+BrothersBatting=pd.read_excel('BrothersBatting.xlsx')
+UnilionsBatting=pd.read_excel('UnilionsBatting.xlsx')
+DragonsBatting=pd.read_excel('DragonsBatting.xlsx')
+RakutenBatting=pd.read_excel('RakutenBatting.xlsx')
+GardiansBatting=pd.read_excel('GuardiansBatting.xlsx')
+BrothersDefense=pd.read_excel('BrothersDefense.xlsx')
+UnilionsDefense=pd.read_excel('UnilionsDefense.xlsx')
+DragonsDefense=pd.read_excel('DragonsDefense.xlsx')
+RakutenDefense=pd.read_excel('RakutenDefense.xlsx')
+GuardiansDefense=pd.read_excel('GuardiansDefense.xlsx')
+Brothers=pd.read_excel('Brothers.xlsx')
+Unilions=pd.read_excel('Unilions.xlsx')
+
+
 if option == '中信兄弟':
   image = Image.open('brothers.png')
   st.image(image)
+    
   if option1=='球隊成績':
     st.header('球隊成績')
-    Brothers=pd.read_excel('Brothers.xlsx')
     st.write(Brothers) 
+
   elif option1=='投手成績':
     st.header('投手成績')
-    BrothersPitching=pd.read_excel('BrothersPitching.xlsx')
-    UnilionsPitching=pd.read_excel('UnilionsPitching.xlsx')
-    DragonsPitching=pd.read_excel('DragonsPitching.xlsx')
-    RakutenPitching=pd.read_excel('RakutenPitching.xlsx')
-    GuardiansPitching=pd.read_excel('GuardiansPitching.xlsx')
     st.write(BrothersPitching)
     st.header('數據分析')
     plt.style.use("ggplot")
@@ -49,11 +65,6 @@ if option == '中信兄弟':
     
   elif option1=='打擊成績':
     st.header('打擊成績')
-    BrothersBatting=pd.read_excel('BrothersBatting.xlsx')
-    UnilionsBatting=pd.read_excel('UnilionsBatting.xlsx')
-    DragonsBatting=pd.read_excel('DragonsBatting.xlsx')
-    RakutenBatting=pd.read_excel('RakutenBatting.xlsx')
-    GuardiansBatting=pd.read_excel('GuardiansBatting.xlsx')
     st.write(BrothersBatting)
     st.header('數據分析')
     plt.style.use("ggplot") 
@@ -110,11 +121,6 @@ if option == '中信兄弟':
     
   else:
     st.header('守備成績')
-    BrothersDefense=pd.read_excel('BrothersDefense.xlsx')
-    UnilionsDefense=pd.read_excel('UnilionsDefense.xlsx')
-    DragonsDefense=pd.read_excel('DragonsDefense.xlsx')
-    RakutenDefense=pd.read_excel('RakutenDefense.xlsx')
-    GuardiansDefense=pd.read_excel('GuardiansDefense.xlsx')
     st.write(BrothersDefense)
     st.header('數據分析')
     plt.style.use("ggplot")
@@ -140,15 +146,9 @@ elif option == '統一7-Eleven獅':
   st.image(image)
   if option1=='球隊成績':
     st.header('球隊成績')
-    Unilions=pd.read_excel('Unilions.xlsx')
     st.write(Unilions)    
   elif option1=='投手成績':
     st.header('投手成績')
-    BrothersPitching=pd.read_excel('BrothersPitching.xlsx')
-    UnilionsPitching=pd.read_excel('UnilionsPitching.xlsx')
-    DragonsPitching=pd.read_excel('DragonsPitching.xlsx')
-    RakutenPitching=pd.read_excel('RakutenPitching.xlsx')
-    GuardiansPitching=pd.read_excel('GuardiansPitching.xlsx')
     st.write(UnilionsPitching)
     st.header('數據分析')
     plt.style.use("ggplot")
@@ -169,11 +169,6 @@ elif option == '統一7-Eleven獅':
     st.pyplot(plt)                
   elif option1=='打擊成績':
     st.header('打擊成績')
-    BrothersBatting=pd.read_excel('BrothersBatting.xlsx')
-    UnilionsBatting=pd.read_excel('UnilionsBatting.xlsx')
-    DragonsBatting=pd.read_excel('DragonsBatting.xlsx')
-    RakutenBatting=pd.read_excel('RakutenBatting.xlsx')
-    GuardiansBatting=pd.read_excel('GuardiansBatting.xlsx')
     st.write(UnilionsBatting) 
     st.header('數據分析')
     plt.style.use("ggplot")
@@ -229,11 +224,6 @@ elif option == '統一7-Eleven獅':
  
   else:
     st.header('守備成績')
-    BrothersDefense=pd.read_excel('BrothersDefense.xlsx')
-    UnilionsDefense=pd.read_excel('UnilionsDefense.xlsx')
-    DragonsDefense=pd.read_excel('DragonsDefense.xlsx')
-    RakutenDefense=pd.read_excel('RakutenDefense.xlsx')
-    GuardiansDefense=pd.read_excel('GuardiansDefense.xlsx')
     st.write(UnilionsDefense) 
     st.header('數據分析')
     plt.style.use("ggplot")
@@ -258,15 +248,9 @@ elif option == '味全龍':
   st.image(image)
   if option1=='球隊成績':
     st.header('球隊成績')
-    Dragons=pd.read_excel('Dragons.xlsx')
     st.write(Dragons) 
   elif option1=='投手成績':
     st.header('投手成績')  
-    BrothersPitching=pd.read_excel('BrothersPitching.xlsx')
-    UnilionsPitching=pd.read_excel('UnilionsPitching.xlsx')
-    DragonsPitching=pd.read_excel('DragonsPitching.xlsx')
-    RakutenPitching=pd.read_excel('RakutenPitching.xlsx')
-    GuardiansPitching=pd.read_excel('GuardiansPitching.xlsx')
     st.write(DragonsPitching)
     st.header('數據分析')
     plt.style.use("ggplot")
@@ -287,11 +271,6 @@ elif option == '味全龍':
     st.pyplot(plt)   
   elif option1=='打擊成績':
     st.header('打擊成績')
-    BrothersBatting=pd.read_excel('BrothersBatting.xlsx')
-    UnilionsBatting=pd.read_excel('UnilionsBatting.xlsx')
-    DragonsBatting=pd.read_excel('DragonsBatting.xlsx')
-    RakutenBatting=pd.read_excel('RakutenBatting.xlsx')
-    GuardiansBatting=pd.read_excel('GuardiansBatting.xlsx')
     st.write(DragonsBatting) 
     st.header('數據分析')
     plt.style.use("ggplot")
@@ -346,11 +325,6 @@ elif option == '味全龍':
     st.pyplot(plt)
   else:
     st.header('守備成績')
-    BrothersDefense=pd.read_excel('BrothersDefense.xlsx')
-    UnilionsDefense=pd.read_excel('UnilionsDefense.xlsx')
-    DragonsDefense=pd.read_excel('DragonsDefense.xlsx')
-    RakutenDefense=pd.read_excel('RakutenDefense.xlsx')
-    GuardiansDefense=pd.read_excel('GuardiansDefense.xlsx')
     st.write(DragonsDefense) 
     st.header('數據分析')
     plt.style.use("ggplot")
@@ -375,15 +349,9 @@ elif option == '樂天桃猿':
   st.image(image)
   if option1=='球隊成績':
     st.header('球隊成績')
-    Rakuten=pd.read_excel('Rakuten.xlsx')
     st.write(Rakuten) 
   elif option1=='投手成績':
     st.header('投手成績')
-    BrothersPitching=pd.read_excel('BrothersPitching.xlsx')
-    UnilionsPitching=pd.read_excel('UnilionsPitching.xlsx')
-    DragonsPitching=pd.read_excel('DragonsPitching.xlsx')
-    RakutenPitching=pd.read_excel('RakutenPitching.xlsx')
-    GuardiansPitching=pd.read_excel('GuardiansPitching.xlsx')
     st.write(RakutenPitching)
     st.header('數據分析')
     plt.style.use("ggplot")
@@ -404,11 +372,6 @@ elif option == '樂天桃猿':
     st.pyplot(plt)   
   elif option1=='打擊成績':
     st.header('打擊成績')
-    BrothersBatting=pd.read_excel('BrothersBatting.xlsx')
-    UnilionsBatting=pd.read_excel('UnilionsBatting.xlsx')
-    DragonsBatting=pd.read_excel('DragonsBatting.xlsx')
-    RakutenBatting=pd.read_excel('RakutenBatting.xlsx')
-    GuardiansBatting=pd.read_excel('GuardiansBatting.xlsx')
     st.write(RakutenBatting) 
     st.header('數據分析')
     plt.style.use("ggplot")
@@ -464,11 +427,6 @@ elif option == '樂天桃猿':
    
   else:
     st.header('守備成績')
-    BrothersDefense=pd.read_excel('BrothersDefense.xlsx')
-    UnilionsDefense=pd.read_excel('UnilionsDefense.xlsx')
-    DragonsDefense=pd.read_excel('DragonsDefense.xlsx')
-    RakutenDefense=pd.read_excel('RakutenDefense.xlsx')
-    GuardiansDefense=pd.read_excel('GuardiansDefense.xlsx')
     st.write(RakutenDefense)
     st.header('數據分析')
     plt.style.use("ggplot")
@@ -493,15 +451,9 @@ elif option == '富邦悍將':
   st.image(image)
   if option1=='球隊成績':
     st.header('球隊成績')
-    Guardians=pd.read_excel('Guardians.xlsx')
     st.write(Guardians) 
   elif option1=='投手成績':
     st.header('投手成績')
-    BrothersPitching=pd.read_excel('BrothersPitching.xlsx')
-    UnilionsPitching=pd.read_excel('UnilionsPitching.xlsx')
-    DragonsPitching=pd.read_excel('DragonsPitching.xlsx')
-    RakutenPitching=pd.read_excel('RakutenPitching.xlsx')
-    GuardiansPitching=pd.read_excel('GuardiansPitching.xlsx')
     st.write(GuardiansPitching)
     st.header('數據分析')
     plt.style.use("ggplot")
@@ -522,11 +474,6 @@ elif option == '富邦悍將':
     st.pyplot(plt)       
   elif option1=='打擊成績':
     st.header('打擊成績')
-    BrothersBatting=pd.read_excel('BrothersBatting.xlsx')
-    UnilionsBatting=pd.read_excel('UnilionsBatting.xlsx')
-    DragonsBatting=pd.read_excel('DragonsBatting.xlsx')
-    RakutenBatting=pd.read_excel('RakutenBatting.xlsx')
-    GuardiansBatting=pd.read_excel('GuardiansBatting.xlsx')
     st.write(GuardiansBatting) 
     st.header('數據分析')
     plt.style.use("ggplot")
@@ -581,11 +528,6 @@ elif option == '富邦悍將':
     st.pyplot(plt)
   else:
     st.header('守備成績') 
-    BrothersDefense=pd.read_excel('BrothersDefense.xlsx')
-    UnilionsDefense=pd.read_excel('UnilionsDefense.xlsx')
-    DragonsDefense=pd.read_excel('DragonsDefense.xlsx')
-    RakutenDefense=pd.read_excel('RakutenDefense.xlsx')
-    GuardiansDefense=pd.read_excel('GuardiansDefense.xlsx')
     st.write(GuardiansDefense)  
     st.header('數據分析')
     plt.style.use("ggplot")
