@@ -196,7 +196,7 @@ elif option == '統一7-Eleven獅':
         plt.legend(labels=["BrothersBatting", "UnilionsBatting","DragonsBatting","GuardiansBatting","RakutenBatting"], loc = 'best')
         st.pyplot(plt)
         x=st.button('點取看更多分析')
-    if x:
+     if x:
         plt.subplot(2, 1 ,1)
         plt.style.use("ggplot")
         plt.plot(BrothersBatting.年度, BrothersBatting.上壘率,'.-', color='yellow')
