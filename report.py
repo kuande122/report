@@ -331,6 +331,14 @@ elif option == '味全龍':
     st.pyplot(plt)
     x=st.button('點取看更多分析')
     if x:
+        df = pd.DataFrame(
+        [["2021", 734, 378]],
+         columns=["Year", "StrikeOut", "BB"],
+        )
+
+        fig = px.bar(df, x="Year", y=["StrikeOut","BB"], barmode='group', height=400)
+        
+        st.plotly_chart(fig)
     
   elif option1=='打擊成績':
     st.header('打擊成績')
@@ -575,6 +583,14 @@ elif option == '富邦悍將':
     st.pyplot(plt)  
     x=st.button('點取看更多分析')
     if x:
+        df = pd.DataFrame(
+        [["2021", 851, 363], ["2020", 867, 344],["2019",920,326],["2018",837,341],["2017",839,440]],
+         columns=["Year", "StrikeOut", "BB"],
+        )
+
+        fig = px.bar(df, x="Year", y=["StrikeOut","BB"], barmode='group', height=400)
+        
+        st.plotly_chart(fig)
   elif option1=='打擊成績':
     st.header('打擊成績')
     st.write(GuardiansBatting) 
