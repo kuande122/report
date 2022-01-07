@@ -30,7 +30,9 @@ RakutenDefense=pd.read_excel('RakutenDefense.xlsx')
 GuardiansDefense=pd.read_excel('GuardiansDefense.xlsx')
 Brothers=pd.read_excel('Brothers.xlsx')
 Unilions=pd.read_excel('Unilions.xlsx')
-
+Dragons=pd.read_excel('Dragons.xlsx')
+Rakuten=pd.read_excel('Rakuten.xlsx')
+Guardians=pd.read_excel('Guardians.xlsx')
 
 if option == '中信兄弟':
   image = Image.open('brothers.png')
