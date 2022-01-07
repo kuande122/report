@@ -427,6 +427,16 @@ elif option == '味全龍':
     plt.title('Dragons Defense FPCT VS Other Teams ') # 設定圖表標題
     plt.legend(labels=["BrothersDefense", "UnilionsDefense","DragonsDefense","GuardiansDefense","RakutenDefense"], loc = 'best')
     st.pyplot(plt) 
+    x=st.button('點取看更多分析')
+    if x:
+        df = pd.DataFrame(
+        [["2021", 4597, 117]],
+        columns=["Year", "Baseball Defense Opportunity", "E"],
+        )
+
+        fig = px.bar(df, x="Year", y=["Baseball Defense Opportunity","E"], barmode='group', height=400)
+        
+        st.plotly_chart(fig)
   
 elif option == '樂天桃猿':
   image = Image.open('Rakuten.png')
