@@ -63,6 +63,8 @@ if option == '中信兄弟':
     plt.title('CTBC Brothers Pitching ERA VS Other Teams ') # 設定圖表標題
     plt.legend(labels=["BrothersPitching", "UnilionsPitching","DragonsPitching","GuardiansPitching","RakutenPitching"], loc = 'best')
     st.pyplot(plt) 
+    x=st.button('點取看更多分析')
+    if x:
     
       
     
@@ -184,7 +186,13 @@ elif option == '統一7-Eleven獅':
     plt.xticks(DragonsPitching.年度) 
     plt.title('Unilions Pitching ERA VS Other Teams ') # 設定圖表標題
     plt.legend(labels=["BrothersPitching", "UnilionsPitching","DragonsPitching","GuardiansPitching","RakutenPitching"], loc = 'best')
-    st.pyplot(plt)                
+    st.pyplot(plt) 
+    x=st.button('點取看更多分析')
+    if x:
+        
+        
+        
+        
   elif option1=='打擊成績':
      st.header('打擊成績')
      st.write(UnilionsBatting) 
@@ -302,7 +310,9 @@ elif option == '味全龍':
     #plt.xticks(DragonsPitching.年度) 
     plt.title('Dragons Pitching ERA VS Other Teams ') # 設定圖表標題
     plt.legend(labels=["BrothersPitching", "UnilionsPitching","DragonsPitching","GuardiansPitching","RakutenPitching"], loc = 'best')
-    st.pyplot(plt)   
+    st.pyplot(plt)
+    x=st.button('點取看更多分析')
+    if x:
     
   elif option1=='打擊成績':
     st.header('打擊成績')
@@ -417,7 +427,10 @@ elif option == '樂天桃猿':
     plt.xticks(DragonsPitching.年度) 
     plt.title('Rakuten Pitching ERA VS Other Teams ') # 設定圖表標題
     plt.legend(labels=["BrothersPitching", "UnilionsPitching","DragonsPitching","GuardiansPitching","RakutenPitching"], loc = 'best')
-    st.pyplot(plt)   
+    st.pyplot(plt)  
+    x=st.button('點取看更多分析')
+    if x:
+    
   elif option1=='打擊成績':
     st.header('打擊成績')
     st.write(RakutenBatting) 
@@ -533,7 +546,9 @@ elif option == '富邦悍將':
     plt.xticks(DragonsPitching.年度) 
     plt.title('Guardians Pitching ERA VS Other Teams ') # 設定圖表標題
     plt.legend(labels=["BrothersPitching", "UnilionsPitching","DragonsPitching","GuardiansPitching","RakutenPitching"], loc = 'best')
-    st.pyplot(plt)       
+    st.pyplot(plt)  
+    x=st.button('點取看更多分析')
+    if x:
   elif option1=='打擊成績':
     st.header('打擊成績')
     st.write(GuardiansBatting) 
