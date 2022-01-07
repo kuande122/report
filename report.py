@@ -196,6 +196,12 @@ if option == '中信兄弟':
 elif option == '統一7-Eleven獅':
   image = Image.open('unilion.png')
   st.image(image)
+  st.write("嗆司曲 誰與爭鋒")
+  audio_file = open("誰與爭鋒.mp3", "rb")
+  st.audio(audio_file.read())  
+    
+    
+    
   if option1=='球隊成績':
     st.header('球隊成績')
     st.write(Unilions) 
