@@ -247,6 +247,14 @@ elif option == '統一7-Eleven獅':
                     wspace=0.2, 
                     hspace=0.3)
         st.pyplot(plt)
+        df = pd.DataFrame(
+        [["2021", 1041, 57], ["2020", 1261, 143],["2019",1070,99],["2018",1221,114],["2017",1154,103],["2016",1282,145],
+        ["2015",1196,98],["2014",1079,55]],
+        columns=["Year", "Hit", "Homerun"]
+        )
+        fig = px.bar(df, x="Year", y=["Hit", "Homerun"], barmode='group', height=400)
+        
+        st.plotly_chart(fig)
  
   else:
     st.header('守備成績')
@@ -471,6 +479,13 @@ elif option == '樂天桃猿':
                     wspace=0.2, 
                     hspace=0.3)
         st.pyplot(plt)
+        df = pd.DataFrame(
+        [["2021", 1170, 78], ["2020", 1361, 137]],
+        columns=["Year", "Hit", "Homerun"]
+        )
+        fig = px.bar(df, x="Year", y=["Hit", "Homerun"], barmode='group', height=400)
+        
+        st.plotly_chart(fig)
    
   else:
     st.header('守備成績')
@@ -580,6 +595,13 @@ elif option == '富邦悍將':
                     wspace=0.2, 
                     hspace=0.3)
         st.pyplot(plt)
+        df = pd.DataFrame(
+        [["2021", 1044, 67], ["2020", 1227, 138],["2019",1218,102],["2018",1217,86],["2017",1180,95]],
+        columns=["Year", "Hit", "Homerun"]
+        )
+        fig = px.bar(df, x="Year", y=["Hit", "Homerun"], barmode='group', height=400)
+        
+        st.plotly_chart(fig)
     
   else:
     st.header('守備成績') 
