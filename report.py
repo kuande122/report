@@ -210,7 +210,7 @@ elif option == '統一7-Eleven獅':
     plt.legend(labels=["BrothersBatting", "UnilionsBatting","DragonsBatting","GuardiansBatting","RakutenBatting"], loc = 'best')
     st.pyplot(plt)
 
-     plt.style.use("ggplot")
+    plt.style.use("ggplot")
     plt.plot(BrothersBatting.年度, BrothersBatting.長打率,'.-', color='yellow')
     plt.plot(UnilionsBatting.年度, UnilionsBatting.長打率,'.-', color='darkorange')
     plt.plot(DragonsBatting.年度, DragonsBatting.長打率, '.-',color='red')
