@@ -702,7 +702,7 @@ elif option == '富邦悍將':
   st.write("2021年度歌曲 FIGHT ON")
   audio_file = open("FIGHT ON.mp3", "rb")
   st.audio(audio_file.read()) 
-    st.write("嗆司曲 超強一擊")
+  st.write("嗆司曲 超強一擊")
   audio_file = open("超強一擊.mp3", "rb")
   st.audio(audio_file.read())  
  
