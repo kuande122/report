@@ -1,10 +1,10 @@
-import streamlit as st
-import pandas as pd               # 資料處理套件
-import matplotlib.pyplot as plt   # 資料視覺化套件
-import xlrd
-import plotly.express as px
-from PIL import Image
-st.set_page_config(
+import streamlit as st            #streamlit使用套件
+import pandas as pd               #資料處理套件
+import matplotlib.pyplot as plt   #資料視覺化套件
+import xlrd                       #excel使用套件
+import plotly.express as px       #資料視覺化套件
+from PIL import Image             #匯入圖片套件
+st.set_page_config(             
     page_title="猛祺的期末報告",
     page_icon='phil.ico'
     )
