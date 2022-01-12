@@ -413,9 +413,9 @@ elif option == '統一7-ELEVEn獅':
         fig = px.bar(df, x="Year", y=["Baseball Defense Opportunity","E"], barmode='group', height=400)
         
         st.plotly_chart(fig)
- st.header('年度主視覺')
- image = Image.open('獅.jpg')
- st.image(image)   
+  st.header('年度主視覺')
+  image = Image.open('獅.jpg')
+  st.image(image)   
 elif option == '味全龍':
   st.header('味全龍')
   st.write('味全龍(1990-1999, 2019 - 至今)')
@@ -595,9 +595,9 @@ elif option == '味全龍':
         fig = px.bar(df, x="Year", y=["Baseball Defense Opportunity","E"], barmode='group', height=400)
         
         st.plotly_chart(fig)
- st.header('年度主視覺')
- image = Image.open('龍隊.jpg')
- st.image(image)   
+  st.header('年度主視覺')
+  image = Image.open('龍隊.jpg')
+  st.image(image)   
 elif option == '樂天桃猿':
   st.header('樂天桃猿')
   st.write('第一金剛(2003) – La new熊(2004-2010) – Lamigo 桃猿(2011-2019) – 樂天桃猿(2020 - 至今)')
