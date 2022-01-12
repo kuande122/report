@@ -717,8 +717,7 @@ elif option == '富邦悍將':
   st.audio(audio_file.read())  
   col1, col2 = st.columns(2)
   with col1:
-     st.header('主場位置')
-     st.header('新北新莊棒球場')
+     st.header('主場:新北新莊棒球場')
      st.write('全名：新北市立新莊棒球場（XinZhuang Baseball Stadium）')
      st.write('地址：新北市新莊區立德里和興街66號')
      st.write('草皮：天然草皮（百慕達草）')
