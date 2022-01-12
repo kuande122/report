@@ -63,7 +63,7 @@ if option == '中信兄弟':
     image = Image.open('台中洲際棒球場.png')
     st.image(image)
   with col2:
-     m1 = folium.Map(location=[24.19978, 120.68498], zoom_start=16)
+    m1 = folium.Map(location=[24.19978, 120.68498], zoom_start=16)
 
     # add marker for Liberty Bell
     tooltip = "臺中洲際棒球場"
