@@ -240,9 +240,24 @@ elif option == '統一7-ELEVEn獅':
   st.write("嗆司曲 誰與爭鋒")
   audio_file = open("誰與爭鋒.mp3", "rb")
   st.audio(audio_file.read())  
-    
-    
-    
+  col1, col2 = st.columns(2)
+  with col1:  
+    st.header('主場:臺南市立棒球場')
+    st.write('地址：臺南市南區健康路一段257號')
+    st.write('觀眾席數：12,000席')
+    st.write('全壘打牆距離：左外野：339英呎 中外野：400英呎 右外野：339英呎')
+    image = Image.open('台南球場.jpg')
+    st.image(image)
+  with col2:  
+    m3 = folium.Map(location=[22.98043, 120.2062], zoom_start=16)
+
+    # add marker for Liberty Bell
+    tooltip = "臺南市立棒球場"
+    folium.Marker([22.98043, 120.2062], popup="臺南市立棒球場", tooltip=tooltip
+    ).add_to(m3)
+
+ # call to render
+    folium_static(m3) 
   if option1=='球隊成績':
     st.header('球隊成績')
     st.write(Unilions) 
