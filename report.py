@@ -431,7 +431,7 @@ elif option == '味全龍':
   with col1:  
     st.header('主場:臺北市立天母棒球場')
     st.write('地址：臺北市士林區三玉里忠誠路二段77號（忠誠路與士東路口）')
-    st.write(觀眾席數：10,000席 內野數：10,000席')
+    st.write('觀眾席數：10,000席 內野數：10,000席')
     st.write('全壘打牆距離：左外野：325英呎 中外野：400英呎 右外野：325英呎')
     image = Image.open('台北天母球場.jpg')
     st.image(image)
