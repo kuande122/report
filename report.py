@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt   #資料視覺化套件
 import xlrd                       #excel使用套件
 import plotly.express as px       #資料視覺化套件
 from PIL import Image             #匯入圖片套件
-from streamlit_folium import folium_static
-import folium
+from streamlit_folium import folium_static #地圖套件
+import folium                              #地圖套件
 st.set_page_config(             
     page_title="猛祺的期末報告",
     page_icon='phil.ico'
