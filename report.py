@@ -426,6 +426,25 @@ elif option == '味全龍':
   st.write("嗆司曲 龍霸四方")
   audio_file = open("龍霸四方.mp3", "rb")
   st.audio(audio_file.read())  
+  
+  col1, col2 = st.columns(2)
+  with col1:  
+    st.header('主場:臺北市立天母棒球場')
+    st.write('地址：臺北市士林區三玉里忠誠路二段77號（忠誠路與士東路口）')
+    st.write(觀眾席數：10,000席 內野數：10,000席')
+    st.write('全壘打牆距離：左外野：325英呎 中外野：400英呎 右外野：325英呎')
+    image = Image.open('台北天母球場.jpg')
+    st.image(image)
+  with col2: 
+    m5 = folium.Map(location=[25.11374, 121.53345], zoom_start=16)
+
+    # add marker for Liberty Bell
+    tooltip = "臺北天母棒球場"
+    folium.Marker([25.11374, 121.53345], popup="臺北天母棒球場", tooltip=tooltip
+    ).add_to(m5)
+
+    #   call to render
+    folium_static(m5)
   if option1=='球隊成績':
     st.header('球隊成績')
     st.write(Dragons) 
