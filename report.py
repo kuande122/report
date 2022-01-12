@@ -947,6 +947,6 @@ elif option == '富邦悍將':
         fig = px.bar(df, x="Year", y=["Baseball Defense Opportunity","E"], barmode='group', height=400)
         
         st.plotly_chart(fig)
-   st.header('年度主視覺')
-   image = Image.open('悍將.png')
-   st.image(image)
+  st.header('年度主視覺')
+  image = Image.open('悍將.png')
+  st.image(image)
