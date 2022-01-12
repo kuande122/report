@@ -69,8 +69,6 @@ if option == '中信兄弟':
     tooltip = "臺中洲際棒球場"
     folium.Marker([24.19978, 120.68498], popup="臺中洲際棒球場", tooltip=tooltip
     ).add_to(m1)
-
-    # call to render Folium map in Streamlit
     folium_static(m1)
     
   if option1=='球隊成績':
