@@ -571,6 +571,20 @@ elif option == '樂天桃猿':
   st.write("嗆司曲 超越夢想")
   audio_file = open("超越夢想.mp3", "rb")
   st.audio(audio_file.read())  
+  col1, col2 = st.columns(2)
+  with col1: 
+    st.header('主場:桃園國際棒球場')
+    st.write('地址：桃園市中壢區芝芭里領航北路1段1號')
+    st.write('觀眾席數：兩萬席（內野12,000席，外野8,000席）')
+    st.write('全壘打牆距離：左外野：330英呎 中外野：400英呎 右外野：330英呎')
+    image = Image.open('桃園球場.png')
+    st.image(image)
+  with col2: 
+    m2 = folium.Map(location=[25.00054,121.20038], zoom_start=16)
+    tooltip = "桃園國際棒球場"
+    folium.Marker([25.00054,121.20038], popup="桃園國際棒球場", tooltip=tooltip
+    ).add_to(m2)
+    folium_static(m2)
   if option1=='球隊成績':
     st.header('球隊成績')
     st.write(Rakuten) 
