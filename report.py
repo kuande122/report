@@ -773,9 +773,9 @@ elif option == '樂天桃猿':
         fig = px.bar(df, x="Year", y=["Baseball Defense Opportunity","E"], barmode='group', height=400)
         
         st.plotly_chart(fig)
- st.header('年度主視覺')
- image = Image.open('樂天.jpg')
- st.image(image)   
+  st.header('年度主視覺')
+  image = Image.open('樂天.jpg')
+  st.image(image)   
 elif option == '富邦悍將':
   st.header('富邦悍將')
   st.write('俊國熊(1993-1995) – 興農熊(1996上半季) – 興農牛(1996下半季 – 2012) – 義大犀牛(2013-2016) – 富邦悍將(2017 - 至今)')
