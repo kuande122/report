@@ -56,7 +56,6 @@ if option == '中信兄弟':
   col1, col2 = st.columns(2)
   with col1:
     st.header('主場:臺中洲際棒球場')
-    st.write('全名：新北市立新莊棒球場（XinZhuang Baseball Stadium）')
     st.write('地址：臺中市北屯區崇德路三段835號')
     st.write('觀眾席數：約兩萬席（內野14,321席對號座位，外野5,000席自由座位）')
     st.write('全壘打牆距離：左外野：325英呎 中外野：400英呎 右外野：325英呎')
