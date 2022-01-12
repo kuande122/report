@@ -222,9 +222,9 @@ if option == '中信兄弟':
         fig = px.bar(df, x="Year", y=["Baseball Defense Opportunity","E"], barmode='group', height=400)
         
         st.plotly_chart(fig)
- st.header('年度主視覺')
- image = Image.open('象.jpg')
- st.image(image)   
+  st.header('年度主視覺')
+  image = Image.open('象.jpg')
+  st.image(image)   
     
 elif option == '統一7-ELEVEn獅':
   st.header('統一7-ELEVEn獅')
